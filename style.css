@@ -1,0 +1,27 @@
+table tbody img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+table .actions {
+  width: 150px;
+}
+
+.search-product {
+  width: 300px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.search-product i {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.search-product input {
+  padding-right: 30px;
+}
