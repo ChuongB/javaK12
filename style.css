@@ -25,3 +25,14 @@ table .actions {
 .search-product input {
   padding-right: 30px;
 }
+
+.hide {
+  display: none;
+}
+
+#addProductImage {
+  width: 100%;
+  height: 350px;
+  object-fit: scale-down;
+  display: none;
+}
