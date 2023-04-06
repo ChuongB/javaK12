@@ -156,43 +156,45 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">Add product</h1>
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Edit product</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <form>
                         <div class="mb-3">
-                            <label for="productTitle" class="col-form-label">Title:</label>
-                            <input type="text" class="form-control" id="productTitle" required>
-                            <span class="text-danger pt-2 hide" id="productTitleError">Please input product title</span>
+                            <label for="editProductTitle" class="col-form-label">Title:</label>
+                            <input type="text" class="form-control" id="editProductTitle" required>
+                            <span class="text-danger pt-2 hide" id="editProductTitleError">Please input product
+                                title</span>
                         </div>
                         <div class="mb-3">
-                            <label for="productDescription" class="col-form-label">Description:</label>
-                            <textarea class="form-control " id="productDescription" required></textarea>
-                            <span class="text-danger pt-2 hide" id="productDescriptionError">Please input product
+                            <label for="editProductDescription" class="col-form-label">Description:</label>
+                            <textarea class="form-control " id="editProductDescription" required></textarea>
+                            <span class="text-danger pt-2 hide" id="editProductDescriptionError">Please input product
                                 description</span>
                         </div>
                         <div class="mb-3">
-                            <label for="productImageUrl" class="col-form-label">Image Url:</label>
-                            <input type="text" class="form-control" id="productImageUrl" required readonly>
-                            <span class="text-danger pt-2 hide" id="productImageUrlError">Please input product Image
+                            <label for="editProductImageUrl" class="col-form-label">Image Url:</label>
+                            <input type="text" class="form-control" id="editProductImageUrl" required readonly>
+                            <span class="text-danger pt-2 hide" id="editProductImageUrlError">Please input product Image
                                 Url</span>
                         </div>
                         <div class="mb-3">
-                            <label for="productPrice" class="col-form-label">Price:</label>
-                            <input class="form-control" id="productPrice" type="number" required></input>
-                            <span class="text-danger pt-2 hide" id="productPriceError">Please input product Price</span>
+                            <label for="editProductPrice" class="col-form-label">Price:</label>
+                            <input class="form-control" id="editProductPrice" type="number" required></input>
+                            <span class="text-danger pt-2 hide" id="editProductPriceError">Please input product
+                                Price</span>
                         </div>
                         <div class="mb-3">
-                            <input class="btn btn-primary p-1" type="file" onchange="uploadImage(event)" />
-                            <img src="" alt="" id="addProductImage">
+                            <input class="btn btn-primary p-1" type="file" onchange="uploadImage(event,true)" />
+                            <img src="" alt="" id="editProductImage">
                         </div>
 
                     </form>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary" onClick="addProduct()">Add</button>
+                    <button type="button" class="btn btn-primary" onClick="editProduct()">Save</button>
                 </div>
             </div>
         </div>
